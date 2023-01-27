@@ -16,9 +16,9 @@
 
 ## rooms テーブル
 
-| Column | Type | Type   | Options     |
-| ------------- | ------ | ----------- |
-| name          | string | null: false |
+| Column | Type   | Options     |
+| -------| ------ | ----------- |
+| name   | string | null: false |
 
 ### Association
 - has_many :room_users
