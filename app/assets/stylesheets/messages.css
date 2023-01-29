@@ -56,19 +56,107 @@
   background-color: #ffffff;
 }
 
+/* チャット画面上 */
 .chat-header{
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.header-title{
+  font-size: 24px;
+  color: #333;
+  padding-top: 36px;
+}
+
+.header-button{
+  margin-top: 40px;
+}
+
+.header-button a{
+  color: darkred;
+  border: 1px solid darkred;
+  text-decoration: none;
+  padding: 20px;
+}
+
+
+/* チャット画面中央 */
 .comments{
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
   padding: 46px 40px 0;
+  overflow: scroll;
 }
 
+.comment{
+  margin-bottom: 40px;
+}
+
+.create-date{
+  display: flex;
+  padding: 10px 10px 10px 0;
+}
+
+.comment-name{
+  font-size: 16px;
+  color: #434a54;
+  margin-right: 10px;
+}
+
+.comment-time{
+  font-size: 12px;
+  color: #999;
+}
+
+.comment-message{
+  font-size: 14px;
+  color: #434a54;
+}
+
+
+/* チャット画面下 */
 .form{
   height: 90px;
   background-color: #dddddd;
   padding: 20px 40px;
+  display: flex;
+}
+
+.text-form{
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.text-message{
+  height: 50px;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
+
+.submit-button{
+  color: white;
+  background-color: #38aef0;
+  height: 50px;
+  font-size: 16px;
+  padding: 0 20px;
+  margin-left: 15px;
+  border: none;
+}
+
+.form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
 }
