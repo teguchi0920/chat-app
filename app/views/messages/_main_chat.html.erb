@@ -12,33 +12,7 @@
 </div>
 
 <div class="comments">
-  <div class="comment">
-    <div class="create-date">
-      <div class="comment-name">
-      Toru
-      </div>
-      <div class="comment-time">
-      2023/1/29(Sat) 9:00:00
-      </div>
-    </div>
-    <div calss="comment-message">
-    おはよう
-    </div>
-  </div>
-  
-  <div class="comment">
-    <div class="create-date">
-      <div class="comment-name">
-      Toru
-      </div>
-      <div class="comment-time">
-      2023/1/29(Sat) 13:00:00
-      </div>
-    </div>
-    <div calss="comment-message">
-    こんにちは
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
